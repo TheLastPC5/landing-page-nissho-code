@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*=========================
+スマホを基本設計にする
+~479px: スマートフォン縦 4
+480px~599px: スマートフォン横 5
+600px~959px: タブレット 6
+960px~1279px:小型PC
+1280px~:大型PC
+==========================*/
+html {
+font-size: 100%;
+}
+body {
+color: #24292e;
+}
+a {
+text-decoration: none;
+}
+p {
+font-size: 1.3rem;
+}
+img {
+max-width: 100%; /* スマホサイズでも画像が縮小される。*/
+}
+li {
+list-style: none;
+font-size: 1.2rem;
+}
+
+/*-----------------------------------------------------
+ヘッダー
+----------------------------------------------------*/
+#header {
+max-width: 960px;
+display: flex; /* 横並び */
+align-items: center;
+justify-content: space-between;
+height: 170px;
+margin: 0 auto;
+padding: 0 4%;
+}
+
+#header ul {
+display: flex;
+padding: 10px 0;
+align-items: center;
+}
+
+#header li {
+font-size: 0.9rem;
+margin-left: 30px;
+}
+
+header li a {
+color: #24292e;
+transition: all 0.3s;
+}
+
+#header li a:hover {
+opacity: 0.5;
+}
+
+#header li img.icon {
+width: 30px;
+}
